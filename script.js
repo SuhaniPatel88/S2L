@@ -24,16 +24,16 @@ function startTimer() {
         if (remainingTime <= 0) {
             clearInterval(intervalId);
             stopBell.play();
-            timerElement.innerHTML = "00:00";
+            timerElement.innerHTML = "TIMES UP!";
             timerElement.classList.remove('pulsing');
             resetButton.classList.remove('hidden');
         } else if (remainingTime <= 5) { // Last 5 seconds pulsing
             timerElement.classList.add('pulsing');
-        } else {
-            timerElement.classList.remove('pulsing');
         }
 
-        timerElement.innerHTML = formatTime(remainingTime);
+        if (remainingTime > 0) {
+            timerElement.innerHTML = formatTime(remainingTime);
+        }
     }, 1000);
 }
 
