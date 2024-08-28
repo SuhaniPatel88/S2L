@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elocution Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Elocution Competition Timer</h1>
+        <div id="timer" class="timer">03:00</div>
+        <button id="startButton" class="btn" onclick="startTimer()">Start Timer</button>
+        <button id="resetButton" class="btn hidden" onclick="resetTimer()">Reset Timer</button>
+    </div>
+
+    <audio id="warningBell" src="warning_bell.mp3"></audio>
+    <audio id="stopBell" src="stop_bell.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
