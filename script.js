@@ -15,7 +15,7 @@ function startTimer() {
     intervalId = setInterval(() => {
         const timerElement = document.getElementById("timer");
 
-        if (remainingTime === 30) { // 30 seconds remaining warning
+        if (remainingTime === 175) { // 30 seconds remaining warning
             warningBell.play();
         }
 
