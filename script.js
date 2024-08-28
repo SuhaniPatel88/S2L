@@ -17,7 +17,7 @@ function startTimer() {
 
         const timerElement = document.getElementById("timer");
 
-        if (remainingTime === 10) { // 2 min 30 sec warning
+        if (remainingTime === 5) { // 2 min 30 sec warning
             warningBell.play();
         }
 
