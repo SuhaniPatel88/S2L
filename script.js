@@ -1,4 +1,4 @@
-let timerDuration = 35; // 3 minutes in seconds
+let timerDuration = 180; // 3 minutes in seconds
 let intervalId;
 
 function startTimer() {
