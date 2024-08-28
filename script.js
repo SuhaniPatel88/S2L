@@ -13,11 +13,9 @@ function startTimer() {
     let remainingTime = timerDuration;
 
     intervalId = setInterval(() => {
-        remainingTime--;
-
         const timerElement = document.getElementById("timer");
 
-        if (remainingTime === 1) { // 2 min 30 sec warning
+        if (remainingTime === 30) { // 30 seconds remaining warning
             warningBell.play();
         }
 
@@ -34,6 +32,8 @@ function startTimer() {
         if (remainingTime > 0) {
             timerElement.innerHTML = formatTime(remainingTime);
         }
+
+        remainingTime--;
     }, 1000);
 }
 
