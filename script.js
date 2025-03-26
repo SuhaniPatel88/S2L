@@ -1,4 +1,4 @@
-let timerDuration = 180; // 3 minutes in seconds
+let timerDuration = 300; // 5 minutes in seconds
 let intervalId;
 
 function startTimer() {
@@ -15,7 +15,7 @@ function startTimer() {
     intervalId = setInterval(() => {
         const timerElement = document.getElementById("timer");
 
-        if (remainingTime === 30) { // 30 seconds remaining warning
+        if (remainingTime === 60) { // 60 seconds remaining warning
             warningBell.play();
         }
 
